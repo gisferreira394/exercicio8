@@ -8,15 +8,27 @@
 </head>
 <body>
     <form method="POST">
-        divisivel por 3 e 5
-        <input type="number" name="divisor">
-
+        Soma
+        <input type="number" name="soma">
+        <input type="number" name="somaa">
         <button type="submit" name="Verificar">Converta</button>
     </form>
 
+
+    
     <?php
 
+$n1;
+$n2;
 
+if(isset($_POST["Verificar"])){
+    $n1 = $_POST["soma"];
+    $n2 = $_POST["somaa"];
+$resultado = ($n1+$n2);
+
+}
+
+echo "Soma é " . $resultado;
 
     ?>
 </body>
